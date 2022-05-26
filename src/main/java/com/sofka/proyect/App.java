@@ -5,17 +5,17 @@ import java.util.logging.Logger;
 public class App {
     public static void main(String[] args) {
         Logger logger = Logger.getLogger(CalculatorApp.class.getName());
-
         Scanner inputValue = new Scanner(System.in);
         CalculatorApp operation = new CalculatorApp();
-
-        logger.info("Bienvenid@ a la calculadora SofkaU");
 
         double numberOne;
         double numberTwo;
 
-        logger.info("Ingrese el numero 1");
+        logger.info("Bienvenid@ a la calculadora SofkaU");
 
+
+
+        logger.info("Ingrese el numero 1");
         numberOne = inputValue.nextDouble();
 
         logger.info("Ingfrese el numero 2");
@@ -30,6 +30,7 @@ public class App {
         if(option == 1){
             logger.info("Esto es una suma");
             operation.addNumbers(numberOne,numberTwo);
+
         }
         else if(option == 2){
             logger.info("Esto es una Resta");
