@@ -1,8 +1,18 @@
 package com.sofka.proyect;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Esta clase define objeto para realizar la inicializacion del programa de Calculadora
+ * @author Daniel F. Marin 
+ * @author Hernan D. Velasquez
+ * @version 20/05/2022/A 
+ */
 public class App {
+    /**
+     * Clase estatica encargaa de Arrancar el programa de la Calculadora 
+     */
     public static void main(String[] args) {
         Logger logger = Logger.getLogger(CalculatorApp.class.getName());
         Scanner inputValue = new Scanner(System.in);
@@ -14,6 +24,7 @@ public class App {
          */
         double numberOne;
         double numberTwo;
+        double result;
 
         logger.info("Bienvenid@ a la calculadora SofkaU");
 
@@ -27,7 +38,7 @@ public class App {
 
         logger.info("Seleccione Una Opcion correspondiente a la operación a Realizar:");
 
-        logger.info("1: Sumar \n 2: Restar \n 3: Multiplicar \n 4: Dividir");
+        logger.info("\n 1: Sumar \n 2: Restar \n 3: Multiplicar \n 4: Dividir");
 
         /*
         Esta variable va a almacenar la opción seleccionada por el usuario.
@@ -41,21 +52,19 @@ public class App {
         para cada operación se envían los dos parametros tipo double correspondientes a ambos números.
          */
         if(option == 1){
-            logger.info("Esto es una suma");
-            operation.addNumbers(numberOne,numberTwo);
-
+            result = operation.addNumbers(numberOne, numberTwo);
+            logger.log(Level.INFO,"El resultado de la Suma es: {0}", result);
         }
-        else if(option == 2){
-            logger.info("Esto es una Resta");
-            operation.substract(numberOne,numberTwo);
+        else if (option == 2) {
+            result = operation.substract(numberOne, numberTwo);
+            logger.log(Level.INFO,"El resultado de la Resta es: {0}", result);
         }
         else if (option == 3){
-            logger.info("Esto es una Multiplicación");
-            operation.multiplier(numberOne,numberTwo);
-
+            result = operation.multiplier(numberOne, numberTwo);
+            logger.log(Level.INFO,"El resultado de la Multiplicacion es: {0}", result);
         }else if (option == 4){
-            logger.info("Esto es una División");
-            operation.split(numberOne,numberTwo);
+            result = operation.split(numberOne, numberTwo);
+            logger.log(Level.INFO,"El resultado de la Divicion es: {0}", result);
         }
 
         inputValue.close();
