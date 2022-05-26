@@ -6,7 +6,6 @@ import java.util.logging.Logger;
 public class App {
     public static void main(String[] args) {
         Logger logger = Logger.getLogger(CalculatorApp.class.getName());
-
         Scanner inputValue = new Scanner(System.in);
 
         Double numberOne, numberTwo, result;
@@ -26,16 +25,15 @@ public class App {
 
         if(option == 1){
             logger.info("Esto es una suma");
-            result = numberOne + numberTwo;
         }
-        if(option == 2){
+        else if (option == 2) {
             logger.info("Esto es una Resta");
         }
-        if (option == 3){
+        else if (option == 3){
             logger.info("Esto es una Multiplicación");
 
 
-        }if (option == 4){
+        }else if (option == 4){
             logger.info("Esto es una División");
         }
 
