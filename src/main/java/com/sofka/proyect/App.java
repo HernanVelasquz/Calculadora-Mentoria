@@ -3,7 +3,16 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Esta clase define objeto para realizar la inicializacion del programa de Calculadora
+ * @author Daniel F. Marin 
+ * @author Hernan D. Velasquez
+ * @version 20/05/2022/A 
+ */
 public class App {
+    /**
+     * Clase estatica encargaa de Arrancar el programa de la Calculadora 
+     */
     public static void main(String[] args) {
         Logger logger = Logger.getLogger(CalculatorApp.class.getName());
         Scanner inputValue = new Scanner(System.in);
