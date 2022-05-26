@@ -1,13 +1,6 @@
 package com.sofka.proyect;
 
 
-/**
- * Esta clase define objeto el cual permite hacer las cuatro operaciones basicas de Una calculadora.
- * @author Daniel F. Marin
- * @author Hernan D. Velasquez
- * @version 25/05/2022/A
- */
-
 
 public class CalculatorApp {
     /**

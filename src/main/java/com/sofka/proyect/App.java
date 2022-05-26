@@ -1,5 +1,4 @@
 package com.sofka.proyect;
-
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -8,10 +7,14 @@ public class App {
         Logger logger = Logger.getLogger(CalculatorApp.class.getName());
 
         Scanner inputValue = new Scanner(System.in);
+        CalculatorApp operation = new CalculatorApp();
 
-        Double numberOne, numberTwo, result;
+        logger.info("Bienvenid@ a la calculadora SofkaU");
 
-        logger.info("Ingfrese el numero 1");
+        double numberOne;
+        double numberTwo;
+
+        logger.info("Ingrese el numero 1");
 
         numberOne = inputValue.nextDouble();
 
@@ -26,17 +29,20 @@ public class App {
 
         if(option == 1){
             logger.info("Esto es una suma");
-            result = numberOne + numberTwo;
+            operation.addNumbers(numberOne,numberTwo);
         }
-        if(option == 2){
+        else if(option == 2){
             logger.info("Esto es una Resta");
+            operation.substract(numberOne,numberTwo);
         }
-        if (option == 3){
+        else if (option == 3){
             logger.info("Esto es una Multiplicación");
+            operation.multiplier(numberOne,numberTwo);
 
 
-        }if (option == 4){
+        }else if (option == 4){
             logger.info("Esto es una División");
+            operation.split(numberOne,numberTwo);
         }
 
         inputValue.close();
