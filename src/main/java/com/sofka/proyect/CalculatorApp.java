@@ -4,9 +4,9 @@ package com.sofka.proyect;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-public class App {
+public class CalculatorApp {
     public static void main(String[] args) {
-        Logger logger = Logger.getLogger(App.class.getName());
+        Logger logger = Logger.getLogger(CalculatorApp.class.getName());
         Scanner entrada = new Scanner(System.in);
 
         logger.info("Seleccione Una Opcion de la Calculadora:");
