@@ -1,5 +1,15 @@
 package com.sofka.proyect;
 
+/**
+ * Esta clase define objeto para realizar las cuatro operaciones Basicas de la calculadora 
+ *  Suma
+ *  Resta
+ *  Divicion
+ *  Multiplicacion 
+ * @author Daniel F. Marin 
+ * @author Hernan D. Velasquez
+ * @version 20/05/2022/A 
+ * */
 
 
 public class CalculatorApp {
