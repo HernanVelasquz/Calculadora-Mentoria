@@ -28,6 +28,8 @@ public class App {
 
         int option = inputValue.nextInt();
 
+
+        
         if(option == 1){
             result = operation.addNumbers(numberOne, numberTwo);
             logger.log(Level.INFO,"El resultado de la Suma es: {0}", result);
