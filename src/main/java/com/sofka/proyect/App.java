@@ -30,20 +30,18 @@ public class App {
 
         if(option == 1){
             result = operation.addNumbers(numberOne, numberTwo);
-            logger.log(Level.INFO,"El resultado es: {0}", result);
+            logger.log(Level.INFO,"El resultado de la Suma es: {0}", result);
         }
         else if (option == 2) {
-            logger.info("Esto es una Resta");
-            operation.substract(numberOne,numberTwo);
+            result = operation.substract(numberOne, numberTwo);
+            logger.log(Level.INFO,"El resultado de la Resta es: {0}", result);
         }
         else if (option == 3){
-            logger.info("Esto es una Multiplicación");
-            operation.multiplier(numberOne,numberTwo);
-
-
+            result = operation.multiplier(numberOne, numberTwo);
+            logger.log(Level.INFO,"El resultado de la Multiplicacion es: {0}", result);
         }else if (option == 4){
-            logger.info("Esto es una División");
-            operation.split(numberOne,numberTwo);
+            result = operation.split(numberOne, numberTwo);
+            logger.log(Level.INFO,"El resultado de la Divicion es: {0}", result);
         }
 
         inputValue.close();
