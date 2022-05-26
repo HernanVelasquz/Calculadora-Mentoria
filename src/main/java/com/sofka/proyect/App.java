@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 public class App {
     public static void main(String[] args) {
         Logger logger = Logger.getLogger(CalculatorApp.class.getName());
+
         Scanner inputValue = new Scanner(System.in);
 
         Double numberOne, numberTwo, result;

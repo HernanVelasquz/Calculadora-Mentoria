@@ -1,12 +1,32 @@
 package com.sofka.proyect;
 
 
-import java.util.Scanner;
-import java.util.logging.Logger;
+/**
+ * Esta clase define objeto el cual permite hacer las cuatro operaciones basicas de Una calculadora.
+ * @author Daniel F. Marin
+ * @author Hernan D. Velasquez
+ * @version 25/05/2022/A
+ */
+
 
 public class CalculatorApp {
 
     /**
+     * Metodo que devuelve el resultado de la multipliclar
+     * @return el resultado multiplicar los numeros.
+     */
+    public double multiplier(double numberOne, double numberTwo) {
+        return numberOne * numberTwo;
+    }
+
+    /**
+     * Metodo encargado de realizar la operación de la división
+     * @return el resutado de dividir dos numeros.
+     */
+    public double split(double numberOne, double numberTwo){
+        return numberOne / numberTwo;
+
+     /**
      Método que recibe dos números tipo double para realizar la suma entre ellos y
      @return El resultado de dicha operación
      */
