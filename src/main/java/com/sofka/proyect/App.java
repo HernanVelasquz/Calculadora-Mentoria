@@ -51,6 +51,7 @@ public class App {
         Al indicar que operación se va a efectuar se usa el objeto de la clase CalculatorApp instanciado para acceder a los métodos
         para cada operación se envían los dos parametros tipo double correspondientes a ambos números.
          */
+        
         if(option == 1){
             result = operation.addNumbers(numberOne, numberTwo);
             logger.log(Level.INFO,"El resultado de la Suma es: {0}", result);
