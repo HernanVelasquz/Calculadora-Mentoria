@@ -1,17 +1,18 @@
 package com.sofka.proyect;
-
 import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class App {
     public static void main(String[] args) {
         Logger logger = Logger.getLogger(CalculatorApp.class.getName());
+
         Scanner inputValue = new Scanner(System.in);
         CalculatorApp operation = new CalculatorApp();
 
         logger.info("Bienvenid@ a la calculadora SofkaU");
 
-        Double numberOne, numberTwo, result;
+        double numberOne;
+        double numberTwo;
 
         logger.info("Ingrese el numero 1");
 
@@ -30,18 +31,18 @@ public class App {
             logger.info("Esto es una suma");
             operation.addNumbers(numberOne,numberTwo);
         }
-        if(option == 2){
+        else if(option == 2){
             logger.info("Esto es una Resta");
             operation.substract(numberOne,numberTwo);
         }
-        if (option == 3){
+        else if (option == 3){
             logger.info("Esto es una Multiplicación");
             operation.multiplier(numberOne,numberTwo);
 
 
-        }if (option == 4){
+        }else if (option == 4){
             logger.info("Esto es una División");
-            operation.splint(numberOne,numberTwo);
+            operation.split(numberOne,numberTwo);
         }
 
         inputValue.close();
